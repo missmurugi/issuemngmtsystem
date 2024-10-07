@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Client Dashboard</title>
+        <link rel= "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" >
+        <!-- <link rel="stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/
+        font-awesome-line-awesome/css/all.min.css" /> -->
+        <link rel="stylesheet" href="clienthomepage.css"/>
+
+</head>
+<body>
+
+<!-- Sidebar -->
+<!-- Boxicons CSS -->
+<link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+<script src="clienthomepage.js" defer></script>
+
+</head>
+<body>
+<nav class="sidebar locked">
+  <div class="logo_items flex">
+    <span class="nav_image">
+      <img src="images/sysrelogo.jpeg" alt="logo_img" />
+    </span>
+    <span class="logo_name">Client's Dashboard</span>
+    <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+    <i class="bx bx-x" id="sidebar-close"></i>
+  </div>
+
+  <div class="menu_container">
+    <div class="menu_items">
+        <ul class="menu_item">
+            <div class="menu_title flex">
+                <span class="title">Dashboard</span>
+                <span class="line"></span>
+            </div>
+            <li class="item" id="">
+                <a href="#shadowboxissue" class="link flex">
+                    <i class="bx bx-home-alt"></i>
+                    <span>Issues</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#cstaff" class="link flex">
+                    <i class="bx bx-grid-alt"></i>
+                    <span>Staff</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#" class="link flex">
+                    <i class="bx bx-book-content"></i>
+                    <span>Department</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navbar -->
+<nav class="navbar flex">
+  <i class="bx bx-menu" id="sidebar-open"></i>
+  <input type="text" placeholder="Search" class="search_box" />
+  <span class="nav_image">
+      <img src="images/sysrelogo.jpeg" alt="logo_img" />
+  </span>
+</nav>
+
+<!-- ISSUE DIV -->
+<div class="shadowbox" id="shadowboxissue"><br>
+  <h2>Client Issue Form</h2><br>
+  <form> 
+    <input type="id" placeholder="Issue Tracker ID" required>
+    <input type="date" id="date" required>
+    <br> <br>      
+    <label>   
+    Department :  
+    </label>   
+    <select>  
+    <option value="Course">Course</option>  
+    <option value="BCA">BCA</option>  
+    <option value="BBA">BBA</option>  
+    <option value="B.Tech">B.Tech</option>  
+    <option value="MBA">MBA</option>  
+    <option value="MCA">MCA</option>  
+    <option value="M.Tech">M.Tech</option>  
+    </select>
+
+    <label>   
+      Module :  
+      </label>   
+      <select>  
+      <option value="Course">Course</option>  
+      <option value="BCA">BCA</option>  
+      <option value="BBA">BBA</option>  
+      <option value="B.Tech">B.Tech</option>  
+      <option value="MBA">MBA</option>  
+      <option value="MCA">MCA</option>  
+      <option value="M.Tech">M.Tech</option>  
+      </select>  
+    <br>
+    <br>
+    Description of the issue:  
+    <br>  
+    <textarea cols="80" rows="5" value="address">  
+    </textarea>  
+    <br> <br>   
+    <button type="submit">Submit</button> 
+    <button type="clear">Clear</button>
+    </form> 
+</div>
+
+<!-- STAFF DIV -->
+ <div class="clientstaff" id="cstaff">
+
+ </div>
+  
+<button id="logout-button" onclick="window.location.href='manager.html'">Logout</button>
+
+</body>
+</html>
